@@ -17,7 +17,7 @@
 <p><label for="serialnumber">Serial Number: </label>
 <input type="text" id="serialnumber" name="serialnumberdryer" maxlength="7" size="13%" placeholder="2021###"></p>
 <p><label for=:modelnumber">Model Number:</label>
-<input type="text" id="modelnumber" name="modelnumber" size="12%" placeholder="E###"></p>
+<input type="text" id="modelnumber" name="modelnumber" size="12%" placeholder="1#####"></p>
 <p><label for="dealer">Dealer:</label>
 <input type="text" id="dealer" name="dealer" size="16%" placeholder="Dealer"></p>
 
@@ -95,15 +95,20 @@
 <input type="checkbox" id="customervfd" name="customervfd" value="customervfd">
 <label for="customervfd"> Customer VFD</label></div>
 
-<div style="float:left"> Discharge Auger Length</div> 
+<div style="float:left"> MC Trax</div>
 <div style="margin-left: 39%">
-<input type ="text" id="dischargeaugerlength" name="dischargeaugerlength" size="5%" placeholder="Feet">
-Drag Conveyor
-<input type="checkbox" id="yesdbc1" name="yesdbc1" value="yesdbc1">
-<label for="yesdbc1"> Yes</label>&nbsp&nbsp
-<input type="checkbox" id="nodbc1" name="nodbc1" value="nodbc1">
-<label for="nodbc1"> No</label></div>
-
+<input type="checkbox" id="yesmt2" name="yesmt2" value="yesmt2">
+<label for="yesmt2"> Yes</label>&nbsp&nbsp
+<input type="checkbox" id="nomt2" name="nomt2" value="nomt2">
+<label for="nomt2"> No</label></div>
+	
+<div style="float:left"> Delete Sampler Assembly?</div>
+<div style="margin-left: 39%">
+<input type="checkbox" id="yesdsa2" name="yesdsa2" value="yesdsa2">
+<label for="yesdsa2"> Yes</label>&nbsp&nbsp
+<input type="checkbox" id="nodsa " name="nodsa2" value="nodsa2">
+<label for="nodsa2"> No</label></div>
+	
 <div style="float:left"> QT Matches Decals and Metal Plates</div>
 <div style="margin-left: 39%">
 <input type="checkbox" id="yesdbc2" name="yesdbc2" value="yesdbc2">
@@ -179,6 +184,16 @@ Drag Conveyor
 <label for="nowai7"> No</label>&nbsp
 <input type="text" id="apswsplumbedcorrectlycom" name="apswsplumbedcorrectlycom" value="" size="40%">
 <label for="apswspplumbedcorrectlycom"> </label></div>
+	
+<div style="float:left"> Air Tube, RTD stowed for shipping?:</div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="yesars5" name="yesars5" value="yesars5">
+<label for="yeswars"> Yes</label>&nbsp&nbsp
+<input type="checkbox" id="noars5" name="noars5" value="noars5">
+<label for="noars5"> No</label>&nbsp
+<input type="text" id="stowedcom" name="stowedcom" value="" size="40%">
+<label for="stowedcom"> </label></div>
+
 
 <div style="float:left"> ETL Stickers:</div>
 <div style="margin-left: 39%"> 
@@ -215,6 +230,13 @@ Drag Conveyor
 <input type="checkbox" id="hvcabinet2" name="hvcabinet2" value="hvcabinet2">
 <label for="hvcabinet2"> HV Cabinet</label>&nbsp</div>
 
+<div style="float:left"> Pulley size correct:</div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="yeswai8" name="yeswai8" value="yeswai8">
+<label for="yeswai8"> Yes</label>&nbsp&nbsp
+<input type="checkbox" id="nowai8" name="nowai8" value="nowai8">
+<label for="nowai8"> No</label>&nbsp</div>
+	
 <hr>
 <b>Blower and Burner Inspection</b>
 <hr>
@@ -276,7 +298,43 @@ Drag Conveyor
 <label for="nomp2"> No</label>&nbsp
 <input type="text" id="mlsccom" name="mlsccom" value="" size="40%" >
 <label for="mlsccom"> </label></div>
+	
+<div style="float:left"> Soft Start Parameters Loaded:</div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="yesss2" name="yesss2" value="yesss2">
+<label for="yesss2"> Yes</label>&nbsp&nbsp
+<input type="checkbox" id="noss2" name="noss2" value="noss2">
+<label for="noss2"> No</label>&nbsp
+<input type="text" id="sscom" name="sscom" value="" size="40%" >
+<label for="sscom"> </label></div>
+	
+<div style="float:left"> Fan VFD Parameters Loaded & Backed up:</div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="yeslb2" name="yeslb2" value="yeslb2">
+<label for="yeslb2"> Yes</label>&nbsp&nbsp
+<input type="checkbox" id="nolb2" name="nolb2" value="nolb2">
+<label for="nolb2"> No</label>&nbsp
+<input type="text" id="lbcom" name="lbcom" value="" size="40%" >
+<label for="lbcom"> </label></div>
+	
+<div style="float:left"> VFD Parameters loaded and Backed up to Keypad:</div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="yesvfd2" name="yesvfd2" value="yesvfd2">
+<label for="yesvfd2"> Yes</label>&nbsp&nbsp
+<input type="checkbox" id="novfd2" name="novfd2" value="novfd2">
+<label for="novfd2"> No</label>&nbsp
+<input type="text" id="vfdcom" name="vfdcom" value="" size="40%" >
+<label for="vfdcom"> </label></div>
 
+<div style="float:left"> Dip Switches Set Correctly:</div>
+<div style="margin-left: 39%"> 
+<input type="checkbox" id="yesds2" name="yesds2" value="yesds2">
+<label for="yesds2"> Yes</label>&nbsp&nbsp
+<input type="checkbox" id="nods2" name="nods2" value="nods2">
+<label for="nods2"> No</label>&nbsp
+<input type="text" id="dscom" name="dscom" value="" size="40%" >
+<label for="dscom"> </label></div>
+	
 <hr>
 <b> Grounding Continuity Test </b>
 <hr>
@@ -305,45 +363,12 @@ Drag Conveyor
 <input type="text" id="24vpowersupplyoutlet" name="24vpowersupplyoutlet" value="" size="6%" placeholder="Volts">
 <label for="24vpowersupplyoutlet"> </label></div>
 
-<hr>
-<b> Metering VFD </b>
-<hr>
-
-<div style="float:left"> Is the VFD the Proper Voltage?</div>
+<div style="float:left"> Dielectric Withstand Test:</div>
 <div style="margin-left: 39%"> 
-<input type="checkbox" id="yesmv1" name="yesmv1" value="yesmv1">
-<label for="yesmv1"> Yes</label>&nbsp&nbsp
-<input type="checkbox" id="nomv1" name="nomv1" value="nomv1">
-<label for="nomv1"> No</label></div>
-
-<div style="float:left"> Are the VFD Parameters Loaded?</div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="yesmv2" name="yesmv2" value="yesmv2">
-<label for="yesmv2"> Yes</label>&nbsp&nbsp
-<input type="checkbox" id="nomv2" name="nomv2" value="nomv2">
-<label for="nomv2"> No</label></div>
-
-<div style="float:left"> Are the Motor Leads the Correct Size?</div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="yesmv3" name="yesmv3" value="yesmv3">
-<label for="yesmv3"> Yes</label>&nbsp&nbsp
-<input type="checkbox" id="nomv3" name="nomv3" value="nomv3">
-<label for="nomv3"> No</label></div>
-
-<div style="float:left"> Are the Dip Switches Set Correctly?</div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="yesmv4" name="yesmv4" value="yesmv4">
-<label for="yesmv4"> Yes</label>&nbsp&nbsp
-<input type="checkbox" id="nomv4" name="nomv4" value="nomv4">
-<label for="nomv4"> No</label></div>
-
-<div style="float:left"> Are the Parameters Backed Up?</div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="yesmv5" name="yesmv5" value="yesmv5">
-<label for="yesmv5"> Yes</label>&nbsp&nbsp
-<input type="checkbox" id="nomv5" name="nomv5" value="nomv5">
-<label for="nomv5"> No</label></div>
-
+<input type="checkbox" id="passdwt" name="passdwt" value="passdwt">
+<label for="passdwt"> Pass</label>&nbsp&nbsp
+<input type="checkbox" id="doesnotpassdwt" name="doesnotpassdwt" value="doesnotpassdwt">
+<label for="doesnotpassdwt"> Does Not Pass</label>&nbsp</div>
 	
 <hr>
 <b> PLC and HMI </b>
@@ -710,14 +735,7 @@ Drag Conveyor
 <input type="checkbox" id="failgft4" name="failgft4" value="failgft4">
 <label for="failgft4"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Customer Fill Status Fault: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passgft5" name="passgft5" value="passgft5">
-<label for="passgft5"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failgft5" name="failgft5" value="failgft5">
-<label for="failgft5"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Fill Auger Protector Fault: </div>
+<div style="float:left"> Fault Simulation: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passgft6" name="passgft6" value="passgft6">
 <label for="passgft6"> Pass</label>&nbsp&nbsp
@@ -737,33 +755,34 @@ Drag Conveyor
 <label for="passgft8"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failgft8" name="failgft8" value="failgft8">
 <label for="failgft8"> Fail</label>&nbsp&nbsp</div>
- 
+
+	
 <hr>
 <b> Discharge Test </b>
 <hr>
 
-<div style="float:left"> Discharge Auger Start: </div>
+<div style="float:left"> Discharge Sweep Start: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passdt1" name="passdt1" value="passdt1">
 <label for="passdt1"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="faildt1" name="faildt1" value="faildt1">
 <label for="faildt1"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Discharge Auger Direction: </div>
+<div style="float:left"> Discharge Sweep Direction: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passdt2" name="passdt2" value="passdt2">
 <label for="passdt2"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="faildt2" name="faildt2" value="faildt2">
 <label for="faildt2"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Discharge Auger Smooth and Quiet: </div>
+<div style="float:left"> Discharge Sweep Correct and Quiet: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passdt3" name="passdt3" value="passdt3">
 <label for="passdt3"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="faildt3" name="faildt3" value="faildt3">
 <label for="faildt3"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Discharge Auger Amperage</div>
+<div style="float:left"> Discharge Sweep Amperage</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="daa" name="daa" value="" size="13" placeholder="Amps">
 <label for="daa"> </label></div>
@@ -788,32 +807,6 @@ Drag Conveyor
 <label for="passdt6"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="faildt6" name="faildt6" value="faildt6">
 <label for="faildt6"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Metering Button Active: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passdt7" name="passdt7" value="passdt7">
-<label for="passdt7"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="faildt7" name="faildt7" value="faildt7">
-<label for="faildt7"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Metering Start: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passdt8" name="passdt8" value="passdt8">
-<label for="passdt8"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="faildt8" name="faildt8" value="faildt8">
-<label for="faildt8"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Metering Correct Rotation: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passdt9" name="passdt9" value="passdt9">
-<label for="passdt9"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="faildt9" name="faildt9" value="faildt9">
-<label for="faildt9"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Metering Motor Amperage</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="mma" name="mma" value="" size="13%" placeholder="Amps">
-<label for="daa"> </label></div>
 
 <div style="float:left"> Speed can be Changed from HMI: </div>
 <div style="margin-left: 39%"> 
@@ -822,35 +815,21 @@ Drag Conveyor
 <input type="checkbox" id="faildt10" name="faildt10" value="faildt10">
 <label for="faildt10"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Proximity Sensor Working at High Speed: </div>
+<div style="float:left"> Proximity Switch Operation: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passdt11" name="passdt11" value="passdt11">
 <label for="passdt11"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="faildt11" name="faildt11" value="faildt11">
 <label for="faildt11"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Belts and Chain ok: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passdt12" name="passdt12" value="passdt12">
-<label for="passdt12"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="faildt12" name="faildt12" value="faildt12">
-<label for="faildt12"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Customer Fault Test: </div>
+<div style="float:left"> Takeaway Fault Test: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passdt13" name="passdt13" value="passdt13">
 <label for="passdt13"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="faildt13" name="faildt13" value="faildt13">
 <label for="faildt13"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Discharge Auger Protector Fault: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passdt14" name="passdt14" value="passdt14">
-<label for="passdt14"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="faildt14" name="faildt14" value="faildt14">
-<label for="faildt14"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Discharge Overload Fault: </div>
+<div style="float:left"> Discharge Fault: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passdt15" name="passdt15" value="passdt15">
 <label for="passdt15"> Pass</label>&nbsp&nbsp
@@ -872,199 +851,59 @@ Drag Conveyor
 <label for="faildt17"> Fail</label>&nbsp&nbsp</div>
  
 <hr>
-<b> Fan and Burner Test </b>
+<b> Fan and Burner Simulation </b>
 <hr>
 
-<div style="float:left"> Fan Starts ok: </div>
+<div style="float:left"> Fan Running ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt1" name="passfbt1" value="passfbt1">
 <label for="passfbt1"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt1" name="failfbt1" value="failfbt1">
 <label for="failfbt1"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Fan Rotation Correct: </div>
+<div style="float:left"> AP ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt2" name="passfbt2" value="passfbt2">
 <label for="passfbt2"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt2" name="failfbt2" value="failfbt2">
 <label for="failfbt2"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Fan Amperage</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="daam1" name="faam1" value="" size="5%" placeholder="Amps">
-<input type="text" id="daam2" name="faam2" value="" size="5%" placeholder="Amps">
-<input type="text" id="daam3" name="faam3" value="" size="5%" placeholder="Amps">
-<label for="faam1"> </label></div>
 
-<div style="float:left"> Fan Smooth and Quiet: </div>
+<div style="float:left"> Burner Simulation ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt3" name="passfbt3" value="passfbt3">
 <label for="passfbt3"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt3" name="failfbt3" value="failfbt3">
 <label for="failfbt3"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Fan Smooth and Quiet while Stopping: </div>
+<div style="float:left"> Cooldown Function ok: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt4" name="passfbt4" value="passfbt4">
 <label for="passfbt4"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt4" name="failfbt4" value="failfbt4">
 <label for="failfbt4"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Burner #2 Button Active: </div>
+<div style="float:left"> Leak Test: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt5" name="passfbt5" value="passfbt5">
 <label for="passfbt5"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt5" name="failfbt5" value="failfbt5">
 <label for="failfbt5"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Burner #2 Start: </div>
+<div style="float:left"> Proper Shutdown: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt6" name="passfbt6" value="passfbt6">
 <label for="passfbt6"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt6" name="failfbt6" value="failfbt6">
 <label for="failfbt6"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Burner #2 Purging: </div>
+<div style="float:left"> Fireeye/Fenwall Sequence Verified: </div>
 <div style="margin-left: 39%"> 
 <input type="checkbox" id="passfbt7" name="passfbt7" value="passfbt7">
 <label for="passfbt7"> Pass</label>&nbsp&nbsp
 <input type="checkbox" id="failfbt7" name="failfbt7" value="failfbt7">
 <label for="failfbt7"> Fail</label>&nbsp&nbsp</div>
  
-<div style="float:left"> Solenoids or POCV ok: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt8" name="passfbt8" value="passfbt8">
-<label for="passfbt8"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt8" name="failfbt8" value="failfbt8">
-<label for="failfbt8"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Burner #2 Trial for Ignition ok: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt9" name="passfbt9" value="passfbt9">
-<label for="passfbt9"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt9" name="failfbt9" value="failfbt9">
-<label for="failfbt9"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Actuator Moving ok: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt10" name="passfbt10" value="passfbt10">
-<label for="passfbt10"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt10" name="failfbt10" value="failfbt10">
-<label for="failfbt10"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Leak Test Inside ok: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt11" name="passfbt11" value="passfbt11">
-<label for="passfbt11"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt11" name="failfbt11" value="failfbt11">
-<label for="failfbt11"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Re-Ignites ok: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt12" name="passfbt12" value="passfbt12">
-<label for="passfbt12"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt12" name="failfbt12" value="failfbt12">
-<label for="failfbt12"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Loss of Flame Fault ok: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt13" name="passfbt13" value="passfbt13">
-<label for="passfbt13"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt13" name="failfbt13" value="failfbt13">
-<label for="failfbt13"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Bottom Burner Active: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt14" name="passfbt14" value="passfbt14">
-<label for="passfbt14"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt14" name="failfbt14" value="failfbt14">
-<label for="failfbt14"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Bottom Burner Start: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt15" name="passfbt15" value="passfbt15">
-<label for="passfbt15"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt15" name="failfbt15" value="failfbt15">
-<label for="failfbt15"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Bottom Burner Purging: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt16" name="passfbt16" value="passfbt16">
-<label for="passfbt16"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt16" name="failfbt16" value="failfbt16">
-<label for="failfbt16"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Bottom Solenoids and POCV ok: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt17" name="passfbt17" value="passfbt17">
-<label for="passfbt17"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt17" name="failfbt17" value="failfbt17">
-<label for="failfbt17"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Bottom Burner Trial for Ignition ok: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt18" name="passfbt18" value="passfbt18">
-<label for="passfbt18"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt18" name="failfbt18" value="failfbt18">
-<label for="failfbt18"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Bottom Actuator Moving ok: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt19" name="passfbt19" value="passfbt19">
-<label for="passfbt19"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt19" name="failfbt19" value="failfbt19">
-<label for="failfbt19"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Bottom Burner Leak Test: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt20" name="passfbt20" value="passfbt20">
-<label for="passfbt20"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt20" name="failfbt20" value="failfbt20">
-<label for="failfbt20"> Fail</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Bottom Burner Loss of Flame Fault ok: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="passfbt21" name="passfbt21" value="passfbt21">
-<label for="passfbt21"> Pass</label>&nbsp&nbsp
-<input type="checkbox" id="failfbt21" name="failfbt21" value="failfbt21">
-<label for="failfbt21"> Fail</label>&nbsp&nbsp</div>
- 
-
-<hr>
-<b> Cooldown Test </b>
-<hr>
-
-<div style="float:left"> Grain Flow Timeout Fault: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="cooldownokct1" name="cooldownokct1" value="cooldownokct1">
-<label for="cooldownokct1"> Cooldown ok</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Discharge Overload Fault: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="cooldownokct2" name="cooldownokct2" value="cooldownokct2">
-<label for="cooldownokct2"> Cooldown ok</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Customer Takeaway Fault: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="cooldownokct3" name="cooldownokct3" value="cooldownokct3">
-<label for="cooldownokct3"> Cooldown ok</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Burner #2 Flame Loss Fault: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="cooldownokct4" name="cooldownokct4" value="cooldownokct4">
-<label for="cooldownokct4"> Cooldown ok</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Manual Cooldown: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="cooldownokct5" name="cooldownokct5" value="cooldownokct5">
-<label for="cooldownokct5"> Cooldown ok</label>&nbsp&nbsp</div>
- 
-<div style="float:left"> Manual Cooldown Cancel: </div>
-<div style="margin-left: 39%"> 
-<input type="checkbox" id="cooldowncancelledct1" name="cooldowncancelledct1" value="cooldowncancelledct1">
-<label for="cooldowncancelledct1"> Cooldown Cancelled</label>&nbsp&nbsp</div>
-
-
+	
 <hr>
 <b> Manuals and Final Checks</b>
 <hr>
@@ -1212,15 +1051,23 @@ Drag Conveyor
 <label for="DCPSSN"> </label>&nbsp
 <input type="checkbox" id=pic7" name="pic7" value="pic7">&nbspPhoto</div>
  
-<div style="float:left">&nbsp VFD</div>
+<div style="float:left">&nbsp Fan VFD</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="VFDDC" name="VFDDC" value="" size="22%" placeholder="S/N">
 <label for="VFDDC"> </label>&nbsp
 <input type="text" id="VFDSN" name="VFDSN" value="" size="14%" placeholder="DC">
 <label for="VFDSN"> </label>&nbsp
 <input type="checkbox" id=pic8" name="pic8" value="pic8">&nbspPhoto</div>
+							
+<div style="float:left">&nbsp Sweep VFD</div>
+<div style="margin-left: 39%"> 
+<input type="text" id="sVFDDC" name="sVFDDC" value="" size="22%" placeholder="S/N">
+<label for="VFDDC"> </label>&nbsp
+<input type="text" id="sVFDSN" name="sVFDSN" value="" size="14%" placeholder="DC">
+<label for="sVFDSN"> </label>&nbsp
+<input type="checkbox" id=pic8" name="pic8s" value="pic8s">&nbspPhoto</div>
  
-<div style="float:left">&nbsp FILL Motor</div>
+<div style="float:left">&nbsp Sweep Motor</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="FMDC" name="FMDC" value="" size="22%" placeholder="S/N">
 <label for="FMDC"> </label>&nbsp
@@ -1228,7 +1075,7 @@ Drag Conveyor
 <label for="FMSN"> </label>&nbsp
 <input type="checkbox" id=pic9" name="pic9" value="pic9">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Discharge Motor</div>
+<div style="float:left">&nbsp Discharge Sensor</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="DMDC" name="DMDC" value="" size="22%" placeholder="S/N">
 <label for="DMDC"> </label>&nbsp
@@ -1236,7 +1083,7 @@ Drag Conveyor
 <label for="DMSN"> </label>&nbsp
 <input type="checkbox" id=pic10" name="pic10" value="pic10">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Discharge Gearbox</div>
+<div style="float:left">&nbsp Primary Regulator</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="DGDC" name="DGDC" value="" size="22%" placeholder="S/N">
 <label for="DGDC"> </label>&nbsp
@@ -1244,21 +1091,13 @@ Drag Conveyor
 <label for="DGSN"> </label>&nbsp
 <input type="checkbox" id=pic11" name="pic11" value="pic11">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Metering Gearbox</div>
+<div style="float:left">&nbsp Secondary Regulator</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="MGDC" name="MGDC" value="" size="22%" placeholder="S/N">
 <label for="MGDC"> </label>&nbsp
 <input type="text" id="MGSN" name="MGSN" value="" size="14%" placeholder="DC">
 <label for="MGSN"> </label>&nbsp
 <input type="checkbox" id=pic12" name="pic12" value="pic12">&nbspPhoto</div>
- 
-<div style="float:left">&nbsp Metering Motor</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="MMDC" name="MMDC" value="" size="22%" placeholder="S/N">
-<label for="MMDC"> </label>&nbsp
-<input type="text" id="MMSN" name="MMSN" value="" size="14%" placeholder="DC">
-<label for="MMSN"> </label>&nbsp
-<input type="checkbox" id=pic13" name="pic13" value="pic13">&nbspPhoto</div>
  
 <div style="float:left">&nbsp Sampler Motor</div>
 <div style="margin-left: 39%"> 
@@ -1276,7 +1115,7 @@ Drag Conveyor
 <label for="SGSN"> </label>&nbsp
 <input type="checkbox" id=pic15" name="pic15" value="pic15">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Fan #1 Motor</div>
+<div style="float:left">&nbsp Modutrol Valve</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="IRSDC" name="IRSDC" value="" size="22%" placeholder="S/N">
 <label for="IRSDC"> </label>&nbsp
@@ -1284,7 +1123,7 @@ Drag Conveyor
 <label for="IRSSN"> </label>&nbsp
 <input type="checkbox" id=pic16" name="pic16" value="pic16">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Actuator #1</div>
+<div style="float:left">&nbsp Sweep Gearbox,Center</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="A1DC" name="A1DC" value="" size="22%" placeholder="S/N">
 <label for="A1DC"> </label>&nbsp
@@ -1292,7 +1131,7 @@ Drag Conveyor
 <label for="A1SN"> </label>&nbsp
 <input type="checkbox" id=pic17" name="pic17" value="pic17">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Actuator #2</div>
+<div style="float:left">&nbsp Blower Motor</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="A2DC" name="A2DC" value="" size="22%" placeholder="S/N">
 <label for="A2DC"> </label>&nbsp
@@ -1300,7 +1139,7 @@ Drag Conveyor
 <label for="A2SN"> </label>&nbsp
 <input type="checkbox" id=pic18" name="pic18" value="pic18">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Modutrol Valve #1</div>
+<div style="float:left">&nbsp Actuator</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="MV1DC" name="MV1DC" value="" size="22%" placeholder="S/N">
 <label for="MV1DC"> </label>&nbsp
@@ -1308,53 +1147,13 @@ Drag Conveyor
 <label for="Mv1SN"> </label>&nbsp
 <input type="checkbox" id=pic19" name="pic19" value="pic19">&nbspPhoto</div>
  
-<div style="float:left">&nbsp Modutrol Valve #2</div>
+<div style="float:left">&nbsp Fenwall</div>
 <div style="margin-left: 39%"> 
 <input type="text" id="MV2DC" name="MV2DC" value="" size="22%" placeholder="S/N">
 <label for="MV2DC"> </label>&nbsp
 <input type="text" id="MV2SN" name="MV2SN" value="" size="14%" placeholder="DC">
 <label for="Mv2SN"> </label>&nbsp
 <input type="checkbox" id=pic20" name="pic20" value="pic20">&nbspPhoto</div>
- 
-<div style="float:left">&nbsp Regulator #1</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="R1DC" name="R1DC" value="" size="22%" placeholder="S/N">
-<label for="R1DC"> </label>&nbsp
-<input type="text" id="R1SN" name="R1SN" value="" size="14%" placeholder="DC">
-<label for="R1SN"> </label>&nbsp
-<input type="checkbox" id=pic21" name="pic21" value="pic21">&nbspPhoto</div>
- 
-<div style="float:left">&nbsp Secondary Regulator #1</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="SR1DC" name="SR1DC" value="" size="22%" placeholder="S/N">
-<label for="SR1DC"> </label>&nbsp
-<input type="text" id="SR1SN" name="SR1SN" value="" size="14%" placeholder="DC">
-<label for="SR1SN"> </label>&nbsp
-<input type="checkbox" id=pic22" name="pic22" value="pic22">&nbspPhoto</div>
- 
-<div style="float:left">&nbsp Secondary Regulator #2</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="SR2DC" name="SR2DC" value="" size="22%" placeholder="S/N">
-<label for="SR2DC"> </label>&nbsp
-<input type="text" id="SR2SN" name="SR2SN" value="" size="14%" placeholder="DC">
-<label for="SR2SN"> </label>&nbsp
-<input type="checkbox" id=pic23" name="pic23" value="pic23">&nbspPhoto</div>
- 
-<div style="float:left">&nbsp Fenwall #1</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="F1DC" name="F1DC" value="" size="22%" placeholder="S/N">
-<label for="F1DC"> </label>&nbsp
-<input type="text" id="F1SN" name="F1SN" value="" size="14%" placeholder="DC">
-<label for="F1SN"> </label>&nbsp
-<input type="checkbox" id=pic24" name="pic24" value="pic24">&nbspPhoto</div>
- 
-<div style="float:left">&nbsp Fenwall #2</div>
-<div style="margin-left: 39%"> 
-<input type="text" id="F2DC" name="F2DC" value="" size="22%" placeholder="S/N">
-<label for="F2DC"> </label>&nbsp
-<input type="text" id="F2SN" name="F2SN" value="" size="14%" placeholder="DC">
-<label for="F2SN"> </label>&nbsp
-<input type="checkbox" id=pic25" name="pic25" value="pic25">&nbspPhoto</div>
  
 <hr>
 <b> Important Photos </b>
